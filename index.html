@@ -1,9 +1,93 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>DevOps Project</title>
-  </head>
-  <body>
-    <h1>Hello from Kush! </h1>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hello from Kush</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #2c3e50);
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #ff6ec4, #7873f5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .card {
+      background-color: #2f2f3f;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+      padding: 2rem;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      animation: slideUp 1s ease-in-out;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ccccdd;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello from Kush</h1>
+  <div class="card">
+    <p>
+      Welcome to my advanced HTML-only website!<br><br>
+      This site uses pure HTML and CSS for a sleek, modern look.<br>
+      Stay tuned for cool stuff, updates, or projects by me!
+    </p>
+  </div>
+  <div class="footer">
+    &copy; 2025 Kush Patel. All rights reserved.
+  </div>
+</body>
 </html>
